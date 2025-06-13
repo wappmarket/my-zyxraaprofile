@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- SEO & Metadata -->
+  <meta name="description" content="Portofolio resmi Zyxra, seorang developer BackEnd & FrontEnd serta UI Designer.">
+  <meta name="keywords" content="Zyxra, portofolio, developer, backend, frontend, UI designer, web automation">
+  <meta name="author" content="wappmarket">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Portofolio Zyxra">
+  <meta property="og:description" content="Lihat keahlian dan proyek-proyek Zyxra sebagai developer dan designer.">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Portofolio+Zyxra">
+  <meta property="og:url" content="https://zyxraportofolio.qloudkuimages.online">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portofolio Zyxra">
+  <meta name="twitter:description" content="Profil dan karya Zyxra dalam dunia pemrograman dan desain.">
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Portofolio+Zyxra">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Zyxra.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      padding: 40px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+    .btn {
+      background-color: #1e40af;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #2563eb;
+    }
+
+    .section {
+      display: none;
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .section h2 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+    .section p, .section li {
+      color: #ddd;
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .card {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+    .card p {
+      font-size: 14px;
+      color: #ddd;
+    }
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portofolio Saya</h1>
+    <p>BackEnd & FrontEnd Developer • UI Designer • Web Automation</p>
+  </header>
+
+  <nav>
+    <button class="btn" onclick="showSection('contact')">Contact</button>
+    <button class="btn" onclick="showSection('skills')">Keahlian</button>
+  </nav>
+
+  <div id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: zyxrabussines@gmail.com</p>
+    <p>WhatsApp: 08817579553</p>
+  </div>
+
+  <div id="skills" class="section">
+    <h2>Keahlian</h2>
+    <ul style="list-style: none;">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Python</li>
+      <li>JavaScript</li>
+    </ul>
+  </div>
+
+  <section class="container">
+    <div class="card">
+      <h3>Website Toko Online</h3>
+      <p>Membuat platform toko online lengkap dengan dashboard admin, sistem checkout, dan integrasi payment gateway.</p>
+    </div>
+    <div class="card">
+      <h3>Bot WhatsApp</h3>
+      <p>Merancang dan deploy bot WhatsApp menggunakan Baileys MD dengan fitur interaktif dan panel sewa otomatis.</p>
+    </div>
+    <div class="card">
+      <h3>Sistem Panel SMM</h3>
+      <p>Website panel layanan sosial media dengan integrasi API dan sistem deposit otomatis melalui pembayaran digital.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Dibuat oleh wappmarket • All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
